@@ -3,7 +3,7 @@
 int main()
 {
     float a = 0.1 + 0.2;
-    float b = 03;
+    float b = 0.3;
 
     printf("a = %.100f\n", a);
     printf("b = %.100f\n", b);

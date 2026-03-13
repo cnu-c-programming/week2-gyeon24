@@ -1,8 +1,31 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
+    int n1, n2;
+    char op;
+    
+    scanf("%d %d %c", &n1, &m2, &op);
+
+    switch (op) {
+        case '+':
+            printf("%d\n", n1 + n2);
+            break;
+        case '-':
+            printf("%d\n", n1 - n2);
+            break;
+        case '*':
+            printf("%d\n", n1 * n2);
+            break;
+        case '/':
+            if (n2 != 0) {
+                printf("%d\n", n1 / n2);
+            } else {
+                printf("0으로 나눌 수 없습니다.\n");
+            }
+            break;
+        default:
+            return 0;
+    }
 
     return 0;
 }
-

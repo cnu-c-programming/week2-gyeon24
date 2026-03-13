@@ -1,14 +1,31 @@
 #include <stdio.h>
 
-int main()
-{
-    int a = 32;
-    int b = 156;
+int main() {
+    int n1, n2;
+    char op;
+    
+    scanf("%d %d %c", &n1, &m2, &op);
 
-    a = a ^ b;
-    b = a ^ b;
-    a = a ^ b;
+    switch (op) {
+        case '+':
+            printf("%d\n", n1 + n2);
+            break;
+        case '-':
+            printf("%d\n", n1 - n2);
+            break;
+        case '*':
+            printf("%d\n", n1 * n2);
+            break;
+        case '/':
+            if (n2 != 0) {
+                printf("%d\n", n1 / n2);
+            } else {
+                return 0;
+            }
+            break;
+        default:
+            return 0;
+    }
 
-    printf("%d %d\n", a, b);
     return 0;
 }
